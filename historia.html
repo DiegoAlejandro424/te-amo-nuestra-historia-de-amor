@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo - Nuestra Historia</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #141414;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(to top, #141414 10%, rgba(20,20,20,0.3)), url('42474474.jpeg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 60px 50px;
+        }
+        .netflix-tag {
+            color: #E50914;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+        .hero h1 {
+            font-size: 4.5rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+            color: #ff4d4d;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+        }
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .btn {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: background 0.2s;
+        }
+        .btn-play {
+            background-color: #fff;
+            color: #000;
+        }
+        .btn-play:hover {
+            background-color: rgba(255,255,255,0.75);
+        }
+        .btn-info {
+            background-color: rgba(109, 109, 110, 0.7);
+            color: #fff;
+        }
+        .section {
+            padding: 50px;
+        }
+        h2 {
+            border-bottom: 2px solid #E50914;
+            padding-bottom: 8px;
+            display: inline-block;
+            font-size: 1.8rem;
+        }
+        .video-container {
+            margin-top: 20px;
+            max-width: 700px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-card {
+            background: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .gallery-card p {
+            margin: 12px 0 0 0;
+            font-size: 1rem;
+            color: #ddd;
+        }
+        .episodes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .episode-card {
+            background: #1f1f1f;
+            padding: 18px;
+            border-radius: 6px;
+            border-left: 4px solid #E50914;
+        }
+        .episode-card small {
+            color: #b3b3b3;
+        }
+        .episode-card h3 {
+            margin: 5px 0 0 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .back-link:hover {
+            color: #fff;
+        }
+        .footer-details {
+            background: #0f0f0f;
+            padding: 30px 50px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #b3b3b3;
+            border-top: 1px solid #333;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PORTADA PRINCIPAL (HERO) -->
+    <div class="hero">
+        <span class="netflix-tag">NETFLIX • ORIGINAL DE AMOR</span>
+        <h1>TE AMO</h1>
+        <p>Un viaje inolvidable lleno de momentos mágicos, risas, miradas y un amor que crece cada día más entre nosotros dos.</p>
+        <div class="buttons">
+            <a href="#contenido-historia" class="btn btn-play">
+                ▶ Reproducir
+            </a>
+            <a href="#contenido-historia" class="btn btn-info">
+                ℹ Más información
+            </a>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE VIDEO E HISTORIA -->
+    <div class="section" id="contenido-historia">
+        <a href="index.html" class="back-link">⬅ Volver a selección de perfiles</a>
+        <h2>🎬 Reproduciendo: Nuestra Historia</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="vid.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </div>
+
+    <!-- GALERÍA DE RECUERDOS (FOTOS ÚNICAS CORREGIDAS) -->
+    <div class="section">
+        <h2>📸 Galería de Recuerdos</h2>
+        <div class="gallery">
+            <div class="gallery-card">
+                <img src="42474474.jpeg" alt="Momentos juntos">
+                <p>Momentos juntos</p>
+            </div>
+            <div class="gallery-card">
+                <img src="4744 (2).jpeg" alt="Nuestro amor infinito">
+                <p>Nuestro amor infinito</p>
+            </div>
+            <div class="gallery-card">
+                <img src="4744.jpeg" alt="Diversión y risas">
+                <p>Diversión y risas</p>
+            </div>
+            <div class="gallery-card">
+                <img src="424242424.jpeg" alt="Promesas del alma">
+                <p>Promesas del alma</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- EPISODIOS -->
+    <div class="section">
+        <h2>📅 Episodios de Nuestra Vida</h2>
+        <div class="episodes">
+            <div class="episode-card">
+                <small>14 de Febrero</small>
+                <h3>Episodio 1: Primer día en verte</h3>
+            </div>
+            <div class="episode-card">
+                <small>21 de Febrero</small>
+                <h3>Episodio 2: Nuestro primer beso</h3>
+            </div>
+            <div class="episode-card">
+                <small>25 de Febrero</small>
+                <h3>Episodio 3: Nuestra primera foto juntos</h3>
+            </div>
+            <div class="episode-card">
+                <small>7 y 8 de Marzo</small>
+                <h3>Episodio 4: La primera vez que hicimos el amor</h3>
+            </div>
+            <div class="episode-card">
+                <small>20 de Marzo</small>
+                <h3>Episodio 5: Primera vez que hicimos videollamada</h3>
+            </div>
+            <div class="episode-card">
+                <small>12 de Mayo</small>
+                <h3>Episodio 6: Te hice sentir en las nubes ese día, nuestras almas conectaron</h3>
+            </div>
+            <div class="episode-card">
+                <small>16 de Mayo</small>
+                <h3>Episodio 7: Dijiste que eres mía y yo tuyo</h3>
+            </div>
+            <div class="episode-card">
+                <small>24 (Días especiales)</small>
+                <h3>Episodio 8: Hablamos bien bonito</h3>
+            </div>
+            <div class="episode-card">
+                <small>2 de Octubre - Final de Temporada</small>
+                <h3>Episodio 9: Volvimos a encontrarnos y seguiremos juntos siempre</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- DETALLES FINALES -->
+    <div class="footer-details">
+        ✨ Tu número favorito: <strong>7</strong> &nbsp;|&nbsp; Tu color favorito: <strong>Rosado 💖</strong>
+        <br><br>
+        Creado con todo el corazón para Yeny de parte de Diego. ❤️
+    </div>
+
+</body>
+</html>

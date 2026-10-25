@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo - Perfil</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: #fff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+        .profile-card {
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .profile-avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid transparent;
+            transition: transform 0.2s, border-color 0.2s;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+        }
+        .profile-card:hover .profile-avatar {
+            border-color: #fff;
+            transform: scale(1.06);
+        }
+        .profile-card span {
+            display: block;
+            margin-top: 18px;
+            font-size: 1.4rem;
+            color: #b3b3b3;
+            font-weight: bold;
+        }
+        .profile-card:hover span {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¿Quién está viendo esta historia?</h1>
+    <!-- Al hacer clic en la foto, redirige automáticamente a la página de la historia -->
+    <a href="historia.html" class="profile-card">
+        <img src="42474474.jpeg" alt="Diego y Yeny" class="profile-avatar">
+        <span>Diego & Yeny 💖</span>
+    </a>
+
+</body>
+</html>
